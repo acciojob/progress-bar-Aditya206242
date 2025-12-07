@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <title>Progress Bar Component</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <main class="container">
+    <h1>Progress Bar Component</h1>
 
+    <section class="progress-wrapper">
+      <!-- progress line / fill -->
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <!-- 5 circles (each must have id circle-1..circle-5 and class .circle) -->
+      <div class="circles">
+        <div id="circle-1" class="circle active" data-step="1">1</div>
+        <div id="circle-2" class="circle" data-step="2">2</div>
+        <div id="circle-3" class="circle" data-step="3">3</div>
+        <div id="circle-4" class="circle" data-step="4">4</div>
+        <div id="circle-5" class="circle" data-step="5">5</div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button id="prev" disabled>Previous</button>
+      <button id="next">Next</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
